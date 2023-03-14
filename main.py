@@ -3,7 +3,7 @@ import requests
 from tkinter import *
 
 root = Tk()
-root.geometry("360x180")
+root.geometry("360x220")
 root.configure(bg='teal')
 
 mylabel = Label(root, text="DC PINGER 1.0", fg='orange', font=40, bg='teal')
@@ -24,7 +24,15 @@ entry2 = Entry(root, width=40)
 entry2.focus_set()
 entry2.pack()
 
+entrylabel3 = Label(root, text="server and channel", font=20, bg='orange', fg='white')
+entrylabel3.pack()
+
+entry3 = Entry(root, width=40)
+entry3.focus_set()
+entry3.pack()
+
 def ping():
+ w = entry3.get()
  y = entry2.get()
  x = entry1.get()
  payload = {
@@ -33,8 +41,7 @@ def ping():
  header = {
      'authorization': y
  }
- r = requests.post(
-     'https://discord.com/api/v9/channels/1006913004576714883/messages', data=payload, headers=header)
+ r = requests.post(w, data=payload, headers=header)
  return x
  return r
 
@@ -44,8 +51,6 @@ button.pack(side=RIGHT)
 
 button1 = Button(root, text='Stop', width=25, command=root.destroy, fg='red')
 button1.pack(side=LEFT)
-
-
 
 root.mainloop()
 
