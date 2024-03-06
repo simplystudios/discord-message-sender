@@ -1,4 +1,4 @@
-# discordmessagesender
+# Discord Message Sender
 send messages to a discord server channel without even opening discord
 # How to use :
 the software requires you to have the following things before you start :
