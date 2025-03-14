@@ -14,5 +14,5 @@ Now with that clear lets get to know how to use it so the app has 3 input option
 *Start : This will trigger the message and send it to the server 
 *Stop : this will end the window
 
-# Note : we do not adivce to use in spamming as ur account will get banned or timed out if you will try to spam so please use the app for its inteded purpose
+# Note : we do not adivce to use in spamming as ur account will get banned or timed out only for educational purposes
 Thanks for checking this project out let us know of any possible bug in the issues tab
